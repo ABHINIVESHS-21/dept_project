@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPUTER SCIENCE</title>
+    <link rel="website icon" type="png" href="Images/logo.png">
+    <link rel="stylesheet" href="styles.css" />
+  <body>
+    <header>
+     <h2 class="Logo">CS DEPARTMENT</h2>
+     <nav class="navigation">
+      <a href="Faculty.html" target="_blank">Faculty</a>
+      <a href="#">Contact</a>
+      <button class="btnlogin-popup">Login</button>
+     </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                    <ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="email" required >
+                    <label>EMAIL</label>
+                </div>
+                    <div class="input-box">
+                    <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="pass" required>
+                    <label>PASSWORD</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">
+                    remember me</label>
+                    <a href="#">Forget password ?</a>
+                </div>
+                <button type="submit"  class="btn" onclick="auth()">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account ?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                    <ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div>
+                    <div class="input-box">
+                    <span class="icons"></span>
+                    <ion-icon name="list-circle-outline"></ion-icon>
+                    <label for="select your roll">select your roll</label>
+                    <select id ="Roll">
+                        <option value = "Student">Student</option>
+                        <option value = "faculty">faculty</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                    <ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>EMAIL</label>
+                </div>
+                    <div class="input-box">
+                    <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>PASSWORD</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">
+                    I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account ?<a 
+                        href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
